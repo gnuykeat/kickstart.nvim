@@ -225,6 +225,10 @@ do
       end
     end,
   })
+
+  vim.api.nvim_create_user_command('PackUpdate', function() vim.pack.update() end, {})
+
+  vim.api.nvim_create_user_command('PackSync', function() vim.pack.update(nil, { target = 'lockfile', force = true }) end, {})
 end
 
 ---Because most plugins are hosted on GitHub, you can use the helper
