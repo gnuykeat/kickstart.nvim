@@ -308,10 +308,13 @@ do
   vim.pack.add { gh 'EdenEast/nightfox.nvim' }
   require('nightfox').setup {}
 
+  vim.pack.add { gh 'kepano/flexoki-neovim' }
+  require('flexoki').setup {}
+
   -- Load the colorscheme here.
   -- Like many other themes, this one has different styles, and you could load
   -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-  vim.cmd.colorscheme 'terafox'
+  vim.cmd.colorscheme 'flexoki-dark'
 
   -- Highlight todo, notes, etc in comments
   vim.pack.add { gh 'folke/todo-comments.nvim' }
